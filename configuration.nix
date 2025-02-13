@@ -198,6 +198,26 @@ in
             desc = "Quit this buffer (:q)";
           };
         }
+         
+        {
+          key = "<leader>o";
+          action = "o<ESC>";
+          mode = "n";
+          options = {
+            silent = true;
+            desc = "New line below, remain in Normal mode";
+          };
+        }
+
+        {
+          key = "<leader>O";
+          action = "O<ESC>";
+          mode = "n";
+          options = {
+            silent = true;
+            desc = "New line above, remain in Normal mode";
+          };
+        }
       ];
       
    };
